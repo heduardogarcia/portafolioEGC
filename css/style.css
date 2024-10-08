@@ -1,0 +1,94 @@
+/* Custom Properties */
+:root {
+  --color-principal: #4f7cac; /* Azul suave */
+  --color-secundario: #c0e0de; /* Tono claro */
+  --color-fondo: #162521; /* Casi negro */
+  --color-texto: #c0e0de; /* Texto claro sobre fondo oscuro */
+  --color-acento: #9eefe5; /* Verde claro */
+  --color-gris: #3c474b; /* Gris oscuro */
+  --color-neutro-claro: #f5f5f5; /* Neutro claro */
+  --color-neutro-oscuro: #2c3e50; /* Neutro oscuro */
+  --color-dorado: #f1c40f; /* Amarillo suave */
+
+  /*alphas*/
+  --color-principal-alpha: rgba(79, 124, 172, 0.5);
+  --color-secundario-alpha: rgba(192, 224, 222, 0.5);
+  --color-fondo-alpha: rgba(22, 37, 33, 0.5);
+  --color-texto-alpha: rgba(192, 224, 222, 0.5);
+  --color-acento-alpha: rgba(158, 239, 229, 0.5);
+  --color-gris-alpha: rgba(60, 71, 75, 0.5);
+  --color-neutro_claro-alpha: rgba(245, 245, 245, 0.5);
+  --color-neutro_oscuro-alpha: rgba(44, 62, 80, 0.5);
+  --color-dorado-alpha: rgba(241, 196, 15, 0.5);
+
+  --white-color: #fff;
+  --gray-light-color: #f3f3f3;
+  --gray-color: #ccc;
+  --gray-dark-coolor: #666;
+  --black-color: #000;
+  --link-color: #509ee3;
+  --title-color: #333;
+  --text-color: #222;
+  --white-alpha-color: rgba(255, 255, 255, 0.5);
+  --black-alpha-color: rgba(0, 0, 0, 0.5);
+  --font-primary: "Raleway", san-serif;
+  --max-width: 1200px;
+  --header-height: 4rem;
+}
+
+/* Resets*/
+
+html {
+  box-sizing: border-box;
+
+  font-size: 62.5%;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body {
+  margin: 0;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.85rem;
+}
+h6 {
+  font-size: 0.75rem;
+}
+
+/* Utilities */
+
+.box-shadow-1 {
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+/* Components */
+
+/* Site Styles */
