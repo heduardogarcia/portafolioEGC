@@ -40,7 +40,7 @@
 
 html {
   box-sizing: border-box;
-
+  scroll-behavior: smooth;
   font-size: 62.5%;
 }
 *,
@@ -50,9 +50,21 @@ html {
 }
 
 body {
+  margin: 0;
   font-family: var(--font-primary);
   font-size: 1.6rem;
   line-height: 2;
+  overflow-x: hidden;
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  transition: all 0.5s ease-out;
+}
+
+a:hover {
+  opacity: 0.75;
 }
 
 h1,
@@ -83,6 +95,14 @@ h6 {
   font-size: 0.75rem;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.6;
+}
 /* Utilities */
 
 .box-shadow-1 {
