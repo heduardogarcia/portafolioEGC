@@ -106,6 +106,17 @@ p {
 }
 /* Utilities */
 
+.btn {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: inline-block;
+  width: 200px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-principal);
+  color: var(--white-color);
+}
 .box-shadow-1 {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
 }
@@ -121,6 +132,28 @@ p {
 }
 /* Components */
 
+/**Hero Image*/
+.hero__image {
+  background-image: var(--hero-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: var(--hero-attachment);
+}
+.hero__image-opacity {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--hero-opacity-color);
+}
+
+.hero__imagen-title {
+  font-size: 5vw;
+  color: var(--hero-text-color);
+}
 .menu {
   /* display: none; */
   display: flex;
@@ -150,6 +183,25 @@ p {
 .menu a:hover {
   color: var(--white-color);
   background-color: var(--color-principal);
+}
+
+@media screen and (min-width: 1024px) {
+  .header__menu-btn {
+    display: none;
+  }
+  .menu {
+    position: static;
+    opacity: 1;
+    pointer-events: auto;
+    flex-direction: row;
+    width: auto;
+  }
+  .menu a {
+    padding: 0 1rem;
+  }
+  .menu a:hover {
+    background-color: transparent;
+  }
 }
 
 .header__menu-btn {
@@ -186,4 +238,14 @@ p {
   color: var(--color-principal);
   font-weight: bold;
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    position: sticky;
+    top: 0;
+  }
 }
