@@ -130,6 +130,38 @@ p {
 .none {
   display: none;
 }
+
+.section {
+  padding: 2rem 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+@media screen and (min-width: 1024px) {
+  .full-lg-screen {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .text-lg-center {
+    text-align: center;
+  }
+
+  .text-lg-left {
+    text-align: left;
+  }
+  .text-lg-right {
+    text-align: right;
+  }
+}
+
 /* Components */
 
 /**Hero Image*/
@@ -214,7 +246,29 @@ p {
   fill: var(--color-principal);
 }
 
+/* Barras */
+
+progress {
+  width: 100%;
+  height: 1rem;
+  background-color: var(--gray-color);
+}
+
+.progress {
+  margin: 1rem auto;
+}
+.progress > p {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+}
+
 /* Site Styles */
+
+.about > article {
+  margin-bottom: 2rem;
+}
 
 .header {
   position: fixed;
@@ -244,6 +298,12 @@ p {
 }
 
 @media screen and (min-width: 1024px) {
+  .about {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-between;
+    align-content: center;
+  }
   .header {
     position: sticky;
     top: 0;
