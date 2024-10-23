@@ -105,7 +105,9 @@ p {
   line-height: 1.6;
 }
 /* Utilities */
-
+.bg-gray-light {
+  background-color: var(--gray-light-color);
+}
 .btn {
   border-radius: 0.5rem;
   padding: 1rem;
@@ -134,7 +136,15 @@ p {
 .section {
   padding: 2rem 1rem;
 }
-
+.section-title {
+  border-top: thin solid var(--color-principal);
+  border-bottom: thin solid var(--color-principal);
+  width: 25rem;
+  margin: 2rem auto;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  color: var(--title-color);
+}
 .text-center {
   text-align: center;
 }
@@ -216,7 +226,18 @@ p {
   color: var(--white-color);
   background-color: var(--color-principal);
 }
+.service-card {
+  margin: 1rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+.service-card svg {
+  fill: var(--color-principal);
+}
 
+.service-card h3 {
+  color: var(--title-color);
+}
 @media screen and (min-width: 1024px) {
   .header__menu-btn {
     display: none;
@@ -295,6 +316,15 @@ progress {
 }
 
 @media screen and (min-width: 768px) {
+  .services > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    justify-content: space-between;
+    align-content: center;
+  }
+  .services .section-title {
+    grid-column: span 2;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -307,5 +337,11 @@ progress {
   .header {
     position: sticky;
     top: 0;
+  }
+  .services > .container {
+    grid-template-columns: repeat(3, 30%);
+  }
+  .services .section-title {
+    grid-column: span 3;
   }
 }
