@@ -226,6 +226,7 @@ p {
   color: var(--white-color);
   background-color: var(--color-principal);
 }
+
 .service-card {
   margin: 1rem auto;
   padding: 1rem;
@@ -267,6 +268,43 @@ p {
   fill: var(--color-principal);
 }
 
+/****Modal****/
+
+.modal {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--black-alpha-color);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
+}
+.modal-content {
+  position: relative;
+}
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.modal-close svg {
+  width: 3rem;
+  height: 3rem;
+  fill: var(--color-principal);
+}
+
+.modal[id|="trabajo"]:target {
+  opacity: 1;
+  pointer-events: auto;
+}
 /* Barras */
 
 progress {
@@ -339,7 +377,7 @@ progress {
   padding: 1rem;
   opacity: 0;
   pointer-events: none;
-  transition: all 0.5 ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .portfolio-card:hover .portfolio-card-info {
